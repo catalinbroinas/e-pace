@@ -9,10 +9,6 @@
 // MDBootstrap
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
-body {
-    background-color: $primary-light;
-}
-
 // Typography
 .title
 {
@@ -91,6 +87,7 @@ body {
       .nav-item
       {
          text-align: center;
+         margin: 0;
       }
    }
 }
