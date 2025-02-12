@@ -40,13 +40,11 @@
    }
    .navbar-brand::after
    {
-      @include nav-item-border;
-      left: 50%;
+      @include nav-item-border(0, 50%);
    }
    .navbar-brand:hover::after
    {
-      width: 100%;
-      left: 0;
+      @include nav-item-border(100%, 0);
    }
    .navbar-title
    {
@@ -70,12 +68,11 @@
    }
    .nav-link::after
    {
-      @include nav-item-border;
+      @include nav-item-border(0, 50%);
    }
    .nav-link:hover::after
    {
-      width: 100%;
-      left: 0;
+      @include nav-item-border(100%, 0);
    }
    @media screen and (max-width: 991px) 
    {
