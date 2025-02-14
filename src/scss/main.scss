@@ -96,19 +96,17 @@
    z-index: 1;
 
    .title-intro {
-      @include custom-text($font-title, 700, 4rem, $secondary-light);
+      @include custom-text($font-title, 700, 3rem, $secondary-light);
    }
 
    .text-intro {
-      @include custom-text($font-text, 600, 1.5rem, $secondary-light);
+      @include custom-text($font-text, 600, 1.2rem, $secondary-light);
    }
 
-   .btn.btn-dark.btn-lg.btn-intro {
+   .btn.btn-dark.btn-intro {
       background-color: rgba($color: $secondary-light, $alpha: 0.1);
-      border-radius: 2rem;
-      padding: 1rem 2.5rem;
-      font-size: 1.25rem;
-      font-weight: 600;
+      border: 1px solid $secondary-light;
+      padding: 0.75rem 3rem;
 
       &:hover,
       &:active {
@@ -136,9 +134,31 @@
 // Components
 .form-register {
    background-color: $primary-main;
+   max-width: 550px;
+}
+
+.btn.btn-primary.btn-submit {
+   background-color: $primary-dark;
+
+   &:hover,
+   &:active {
+      background-color: $primary-dark;
+   }
 }
 
 // Style
 .mask-dark {
    @include mask-dark;
+}
+
+@media screen and (min-width: 1400px) {
+   .intro {
+      .title-intro {
+         @include custom-text($font-title, 700, 4rem, $secondary-light);
+      }
+   
+      .text-intro {
+         @include custom-text($font-text, 600, 1.5rem, $secondary-light);
+      }
+   }
 }
