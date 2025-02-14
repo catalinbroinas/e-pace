@@ -126,25 +126,41 @@
               <!-- Details -->
 
               <!-- Form -->
-              <div class="col-xxl-4 col-xl-5 col-lg-8 col-sm-10">
-                <form class="form-register p-5 rounded-6 shadow-5-strong">
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="col-xxl-5 col-xl-5 col-lg-6 col-sm-10">
+                <!-- Title -->
+                <h3 class="visually-hidden" aria-labelledby="form-register">
+                  Formular de înscriere
+                </h3>
+                <!-- Form Wrapper -->
+                <form
+                  id="form-register"
+                  class="form-register p-5 rounded-6 shadow-5-strong"
+                  method="POST"
+                  action=""
+                >
+                  <!-- Grid Row -->
                   <div class="row mb-4">
-                    <div class="col">
+                    <!-- First Name -->
+                    <div class="col-sm-6">
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
                           id="first-name"
+                          name="firstName"
                           class="form-control"
                         />
                         <label class="form-label" for="first-name">Nume</label>
                       </div>
                     </div>
-                    <div class="col">
+                    <!-- First Name -->
+
+                    <!-- Last Name -->
+                    <div class="col-sm-6">
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
                           id="last-name"
+                          name="lastName"
                           class="form-control"
                         />
                         <label class="form-label" for="last-name"
@@ -152,35 +168,41 @@
                         >
                       </div>
                     </div>
+                    <!-- Last Name -->
                   </div>
+                  <!-- Grid Row -->
 
-                  <!-- Email input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input
-                      type="email"
-                      id="email-address"
-                      class="form-control"
-                    />
-                    <label class="form-label" for="email-address"
-                      >Adresă de email</label
-                    >
+                  <!-- Grid Row -->
+                  <div class="row mb-4">
+                    <!-- Phone Number -->
+                    <div class="col">
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          type="tel"
+                          id="phone-number"
+                          name="phoneNumber"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="phone-number"
+                          >Număr de telefon</label
+                        >
+                      </div>
+                    </div>
+                    <!-- Phone Number -->
                   </div>
-
-                  <!-- Password input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="password" id="password" class="form-control" />
-                    <label class="form-label" for="password">Parolă</label>
-                  </div>
+                  <!-- Grid Row -->
 
                   <!-- Submit button -->
                   <button
                     data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                     type="button"
-                    class="btn btn-primary btn-block mb-4"
+                    class="btn btn-primary btn-submit btn-block"
                   >
-                    Înregistrare
+                    Înscrie-te
                   </button>
                 </form>
+                <!-- Form Wrapper -->
               </div>
               <!-- Form -->
             </div>
