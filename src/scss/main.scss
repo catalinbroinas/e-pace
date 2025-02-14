@@ -95,9 +95,26 @@
    position: relative;
    z-index: 1;
 
-   .title-intro,
+   .title-intro {
+      @include custom-text($font-title, 700, 4rem, $secondary-light);
+   }
+
    .text-intro {
-      color: $secondary-light;
+      @include custom-text($font-text, 600, 1.5rem, $secondary-light);
+   }
+
+   .btn.btn-dark.btn-lg.btn-intro {
+      background-color: rgba($color: $secondary-light, $alpha: 0.1);
+      border-radius: 2rem;
+      padding: 1rem 2.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+
+      &:hover,
+      &:active {
+         background-color: rgba($color: $secondary-light, $alpha: 0.0);
+         border: 2px solid $secondary-light;
+      }
    }
 }
 
