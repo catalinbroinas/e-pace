@@ -37,7 +37,7 @@
 }
 
 // Animation
-@mixin nav-item-border($width: 0, $left: 0)
+@mixin nav-item-border($width: 0, $left: 0, $color: $secondary-light)
 {
     content: '';
     position: absolute;
@@ -45,6 +45,6 @@
     height: 6px;
     left: $left;
     bottom: 0;
-    background-color: $secondary-dark;
+    background-color: $color;
     transition: all ease-in-out .2s;
 }

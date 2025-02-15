@@ -24,67 +24,78 @@
 }
 
 // Navbar
-.navbar
-{
-   background-color: $primary-main;
+.navbar {
+   position: relative;
+   z-index: 2;
+   background-color: transparent;
    padding: 0.5rem 0 0;
-   .navbar-toggler
-   {
+   .navbar-toggler {
       color: $secondary-dark;
       padding: 1rem;
    }
-   .navbar-brand
-   {
+   .navbar-brand {
       padding: 1rem;
       position: relative;
    }
-   .navbar-brand::after
-   {
+   .navbar-brand::after {
       @include nav-item-border(0, 50%);
    }
-   .navbar-brand:hover::after
-   {
+   .navbar-brand:hover::after {
       @include nav-item-border(100%, 0);
    }
-   .navbar-title
-   {
+   .navbar-title {
       @include title(1.5rem);
-      color: $secondary-dark;
+      color: $secondary-light;
    }
-   .navbar-nav
-   {
+   .navbar-nav {
       padding: 0;
    }
-   .nav-item
-   {
+   .nav-item {
       padding: 0;
       margin: 0 3rem 0 0;
    }
-   .nav-link
-   {
+   .nav-link {
       @include sub-title(1.25rem);
       padding: 1rem;
       position: relative;
+      color: $secondary-light;
    }
-   .nav-link::after
-   {
+   .nav-item.dropdown .nav-link {
+      @include sub-title(1.25rem);
+      color: $secondary-light;
+   }
+   .nav-link::after {
       @include nav-item-border(0, 50%);
    }
-   .nav-link:hover::after
-   {
+   .nav-link:hover::after {
       @include nav-item-border(100%, 0);
    }
-   @media screen and (max-width: 991px) 
-   {
-      .navbar-title
-      {
+   @media screen and (max-width: 991px) {
+      background-color: $primary-main;
+      .navbar-brand::after {
+         @include nav-item-border(0, 50%, $secondary-dark);
+      }
+      .navbar-brand:hover::after {
+         @include nav-item-border(100%, 0, $secondary-dark);
+      }
+      .navbar-title {
          display: block;
          margin: auto;
+         color: $secondary-dark;
       }
-      .nav-item
-      {
+      .nav-item {
          text-align: center;
          margin: 0;
+      }
+      .nav-link,
+      .nav-item.dropdown .nav-link {
+         color: $secondary-main;
+      }
+      .nav-link::after {
+         @include nav-item-border(0, 50%, $secondary-dark);
+      }
+      .nav-link:hover::after {
+         @include nav-item-border(100%, 0, $secondary-dark);
       }
    }
 }
@@ -113,6 +124,10 @@
          background-color: rgba($color: $secondary-light, $alpha: 0.0);
          border: 2px solid $secondary-light;
       }
+   }
+
+   @media screen and (min-width: 992px) {
+      margin-top: -78.4px;
    }
 }
 
