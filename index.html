@@ -92,167 +92,119 @@
       <!-- Navbar -->
 
       <!-- Intro -->
-      <section class="intro mb-lg-8 mb-5">
+      <section class="intro shadow-5-strong mb-lg-8 mb-5">
         <!-- Mask -->
         <div class="mask mask-dark h-100 d-flex align-items-center">
           <!-- Container -->
           <div class="container-fluid px-5 mx-5">
             <!-- Grid Row -->
-            <div class="row justify-content-xl-center justify-content-center">
+            <div
+              class="row justify-content-xl-between justify-content-center align-items-center gx-5"
+            >
               <!-- Details -->
-              <div class="col-xl-6 d-xl-block d-none">
+              <div class="col-xxl-5 col-lg-6 d-lg-block d-none">
                 <!-- Title -->
-                <h1 class="title title-intro mb-5">Programul ePACE pe scurt</h1>
+                <h1 class="title title-intro mb-4">Programul ePACE</h1>
 
                 <!-- Text -->
-                <p class="text text-intro mb-1">
-                  Acest program este menit să refacă România și să ne aducă
-                  bunăstare, relansând o economie în care progresul este scopul
-                  comun și are prioritate în fața oricărui alt conflict!
-                  (Conflictele reprezintă bani, timp și resurse pierdute fără a
-                  mai putea fi recuperate vreodată). Susținerea mediului de
-                  afaceri cu capital românesc și format din români de
-                  pretutindeni, este una dintre soluțiile necesare creșterii
-                  nivelului de trai, în concordanță cu stopajul a nenumărate
-                  pierderi precum a unor resurse românești ce au ajuns în
-                  proprietatea companiilor străine.
-                </p>
-                <p class="text text-intro mb-1">
-                  România noastră este la un pas de faliment, iar adevăratul
-                  motiv este fiindcă a fost gestionată de politicieni fără nicio
-                  pregătire profesionala în mediul de afaceri și mai ales,
-                  politicieni care ne-au vândut resurse naționale pentru bani
-                  puțini și câștiguri personale pe termen scurt, nicidecum
-                  pentru că nu are suficiente bogății ca să fie profitabilă.
-                </p>
-                <p class="text text-intro">
-                  Economia României noastre poate fi redresată printr-o
-                  schimbare rapidă și eficientă a direcției, astfel încât
-                  bunăstarea noastră, a tuturor romanilor, să devină prioritară
-                  în fața intereselor externe, nicidecum prin continuarea
-                  împrumuturilor externe. Este necesar să absorbim productiv
-                  toate fondurile europene puse la dispoziția noastră și să
-                  colaborăm cu celelalte țări într-un mod echitabil, deschizând
-                  astfel calea către un viitor prosper.
+                <p class="text text-intro mb-4">
+                  Prin patriotism, responsabilitate și unitate, reconstruim
+                  împreuna România de la temelii, asigurând o țară prosperă
+                  pentru noi, copiii și nepoții noștri!
                 </p>
                 <!-- Text -->
+
+                <!-- Button -->
+                <a
+                  href="#!"
+                  role="button"
+                  class="btn btn-dark btn-lg btn-intro"
+                  data-mdb-ripple-init
+                  data-mdb-ripple-color="light"
+                  aria-label="Detalii despre program"
+                  >Detalii</a
+                >
               </div>
               <!-- Details -->
 
               <!-- Form -->
-              <div class="col-xxl-5 col-xl-6 col-lg-8 col-sm-10">
-                <form class="form-register p-5 rounded-6 shadow-5-strong">
-                  <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="col-xxl-5 col-xl-5 col-lg-6 col-sm-10">
+                <!-- Title -->
+                <h3 class="visually-hidden" aria-labelledby="form-register">
+                  Formular de înscriere
+                </h3>
+                <!-- Form Wrapper -->
+                <form
+                  id="form-register"
+                  class="form-register p-5 rounded-6 shadow-5-strong"
+                  method="POST"
+                  action=""
+                >
+                  <!-- Grid Row -->
                   <div class="row mb-4">
-                    <div class="col">
+                    <!-- First Name -->
+                    <div class="col-sm-6">
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
-                          id="form3Example1"
+                          id="first-name"
+                          name="firstName"
                           class="form-control"
                         />
-                        <label class="form-label" for="form3Example1"
-                          >First name</label
-                        >
+                        <label class="form-label" for="first-name">Nume</label>
                       </div>
                     </div>
-                    <div class="col">
+                    <!-- First Name -->
+
+                    <!-- Last Name -->
+                    <div class="col-sm-6">
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
-                          id="form3Example2"
+                          id="last-name"
+                          name="lastName"
                           class="form-control"
                         />
-                        <label class="form-label" for="form3Example2"
-                          >Last name</label
+                        <label class="form-label" for="last-name"
+                          >Prenume</label
                         >
                       </div>
                     </div>
+                    <!-- Last Name -->
                   </div>
+                  <!-- Grid Row -->
 
-                  <!-- Email input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input
-                      type="email"
-                      id="form3Example3"
-                      class="form-control"
-                    />
-                    <label class="form-label" for="form3Example3"
-                      >Email address</label
-                    >
+                  <!-- Grid Row -->
+                  <div class="row mb-4">
+                    <!-- Phone Number -->
+                    <div class="col">
+                      <div data-mdb-input-init class="form-outline">
+                        <input
+                          type="tel"
+                          id="phone-number"
+                          name="phoneNumber"
+                          class="form-control"
+                        />
+                        <label class="form-label" for="phone-number"
+                          >Număr de telefon</label
+                        >
+                      </div>
+                    </div>
+                    <!-- Phone Number -->
                   </div>
-
-                  <!-- Password input -->
-                  <div data-mdb-input-init class="form-outline mb-4">
-                    <input
-                      type="password"
-                      id="form3Example4"
-                      class="form-control"
-                    />
-                    <label class="form-label" for="form3Example4"
-                      >Password</label
-                    >
-                  </div>
-
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-center mb-4">
-                    <input
-                      class="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      id="form2Example33"
-                      checked
-                    />
-                    <label class="form-check-label" for="form2Example33">
-                      Subscribe to our newsletter
-                    </label>
-                  </div>
+                  <!-- Grid Row -->
 
                   <!-- Submit button -->
                   <button
                     data-mdb-ripple-init
+                    data-mdb-ripple-color="light"
                     type="button"
-                    class="btn btn-primary btn-block mb-4"
+                    class="btn btn-primary btn-submit btn-block"
                   >
-                    Sign up
+                    Înscrie-te
                   </button>
-
-                  <!-- Register buttons -->
-                  <div class="text-center">
-                    <p>or sign up with:</p>
-                    <button
-                      data-mdb-ripple-init
-                      type="button"
-                      class="btn btn-secondary btn-floating mx-1"
-                    >
-                      <i class="fab fa-facebook-f"></i>
-                    </button>
-
-                    <button
-                      data-mdb-ripple-init
-                      type="button"
-                      class="btn btn-secondary btn-floating mx-1"
-                    >
-                      <i class="fab fa-google"></i>
-                    </button>
-
-                    <button
-                      data-mdb-ripple-init
-                      type="button"
-                      class="btn btn-secondary btn-floating mx-1"
-                    >
-                      <i class="fab fa-twitter"></i>
-                    </button>
-
-                    <button
-                      data-mdb-ripple-init
-                      type="button"
-                      class="btn btn-secondary btn-floating mx-1"
-                    >
-                      <i class="fab fa-github"></i>
-                    </button>
-                  </div>
                 </form>
+                <!-- Form Wrapper -->
               </div>
               <!-- Form -->
             </div>
