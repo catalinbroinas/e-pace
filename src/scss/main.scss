@@ -15,6 +15,10 @@ body {
 }
 
 // Typography
+.page-title {
+   @include custom-text($font-title, 700, 3rem, $secondary-light);
+   display: none;
+}
 .title {
    @include title;
 }
@@ -115,6 +119,10 @@ body {
    position: relative;
    z-index: 1;
 
+   .col-details {
+      display: none;
+   }
+
    .title-intro {
       @include custom-text($font-title, 700, 3rem, $secondary-light);
    }
@@ -176,6 +184,24 @@ body {
    @include mask-dark;
 }
 
+// Small devices
+@media (max-width: 767px) and (orientation: portrait) {
+   .page-title {
+      display: block;
+   }
+}
+
+// Medium devices
+@media (min-width: 768px) and (orientation: portrait), 
+   (min-width: 1024px) {
+      .intro {
+         .col-details {
+            display: block;
+         }
+      }
+   }
+
+// Extra Large devices
 @media screen and (min-width: 1400px) {
    .intro {
       .title-intro {
