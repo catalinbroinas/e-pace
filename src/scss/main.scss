@@ -31,9 +31,10 @@ body {
 
 // Navbar
 .navbar {
-   position: relative;
+   position: fixed;
    z-index: 2;
    background-color: transparent;
+   box-shadow: none;
    padding: 0.5rem 0 0;
 
    .navbar-toggler {
@@ -111,6 +112,39 @@ body {
          @include nav-item-border(100%, 0, $secondary-dark);
       }
    }
+
+   transition-property: background-color, color, box-shadow;
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in-out;
+}
+
+.navbar.navbar-scroll {
+   @media screen and (min-width: 992px) {
+      background-color: $primary-main;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 4px 12px 0px, 
+         rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+
+      .navbar-brand::after {
+         @include nav-item-border(0, 50%, $secondary-dark);
+      }
+      .navbar-brand:hover::after {
+         @include nav-item-border(100%, 0, $secondary-dark);
+      }
+
+      .navbar-title {
+         color: $secondary-dark;
+      }
+      
+      .nav-link {
+         color: $secondary-main;
+      }
+      .nav-link::after {
+         @include nav-item-border(0, 50%, $secondary-dark);
+      }
+      .nav-link:hover::after {
+         @include nav-item-border(100%, 0, $secondary-dark);
+      }
+   }
 }
 
 // Intro
@@ -141,10 +175,6 @@ body {
          background-color: rgba($color: $secondary-light, $alpha: 0.0);
          border: 2px solid $secondary-light;
       }
-   }
-
-   @media screen and (min-width: 992px) {
-      margin-top: -78.4px;
    }
 }
 
