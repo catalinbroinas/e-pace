@@ -94,13 +94,20 @@
         <!-- Mask -->
         <div class="mask mask-dark h-100 d-flex align-items-center">
           <!-- Container -->
-          <div class="container-fluid px-5 mx-5">
+          <div class="container-fluid px-lg-5 mx-lg-5">
+            <!-- Title -->
+            <h1 class="title title-intro text-center d-block d-md-none mb-5">
+              ePACE
+            </h1>
+
             <!-- Grid Row -->
             <div
-              class="row justify-content-xl-between justify-content-center align-items-center gx-5"
+              class="row justify-content-xl-between justify-content-center align-items-center"
             >
               <!-- Details -->
-              <div class="col-xxl-5 col-lg-6 d-lg-block d-none">
+              <div
+                class="col-xxl-5 col-lg-6 col-md-10 d-md-block d-none mb-md-5 mb-lg-0"
+              >
                 <!-- Title -->
                 <h1 class="title title-intro mb-4">Programul ePACE</h1>
 
@@ -126,7 +133,7 @@
               <!-- Details -->
 
               <!-- Form -->
-              <div class="col-xxl-5 col-xl-5 col-lg-6 col-sm-10">
+              <div class="col-xl-5 col-lg-6 col-auto">
                 <!-- Title -->
                 <h3 class="visually-hidden" aria-labelledby="form-register">
                   Formular de înscriere
@@ -142,18 +149,22 @@
                   <!-- Grid Row -->
                   <div class="row mb-4">
                     <div class="col-auto mx-auto">
-                      <p
+                      <div
                         class="sub-title text-success text-center"
-                        aria-label="Numărul de utilizatori deja înscriși în program"
+                        aria-live="polite"
                       >
                         <i
                           class="fa-solid fa-user-check me-2"
                           data-mdb-tooltip-init
                           data-mdb-placement="left"
-                          title="Utilizatori înscriși în program "
+                          title="Utilizatori înscriși în program"
+                          aria-hidden="true"
                         ></i>
                         <span>179.000</span>
-                      </p>
+                        <span class="visually-hidden"
+                          >de utilizatori înscriși în program</span
+                        >
+                      </div>
                     </div>
                   </div>
                   <!-- Grid Row -->
@@ -161,7 +172,7 @@
                   <!-- Grid Row -->
                   <div class="row mb-4">
                     <!-- First Name -->
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 mb-4 mb-sm-0">
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
