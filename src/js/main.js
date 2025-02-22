@@ -1,10 +1,10 @@
 import '../scss/main.scss';
 
-import { Ripple, Dropdown, Collapse, Input, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
+import { Ripple, Dropdown, Collapse, Input, Tooltip, initMDB } from 'mdb-ui-kit/js/mdb.es.min.js';
 
 function MainDomManager() {
     const initApp = () => {
-        initMDB({ Ripple, Dropdown, Collapse, Input });
+        initMDB({ Ripple, Dropdown, Collapse, Input, Tooltip });
     }
 
     return { initApp };

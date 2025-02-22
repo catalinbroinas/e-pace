@@ -155,7 +155,7 @@
 
 // Components
 .form-register {
-   background-color: $primary-main;
+   @include ice-style(0.9, 1px);
    max-width: 550px;
 }
 
