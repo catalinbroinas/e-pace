@@ -9,17 +9,19 @@
 // MDBootstrap
 @import 'mdb-ui-kit/src/scss/mdb.free.scss';
 
+// Body
+body {
+   background-color: $primary-main;
+}
+
 // Typography
-.title
-{
+.title {
    @include title;
 }
-.sub-title
-{
+.sub-title {
    @include sub-title;
 }
-.text
-{
+.text {
    @include text;
 }
 
