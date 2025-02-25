@@ -17,7 +17,7 @@
     <link rel="stylesheet" crossorigin href="./assets/index.css">
   </head>
   <body>
-    <!--Main Navigation-->
+    <!-- Header -->
     <header>
       <!-- Navbar -->
       <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
@@ -32,7 +32,7 @@
             data-mdb-target="#main-navigation"
             aria-controls="main-navigation"
             aria-expanded="false"
-            aria-label="Comutați navigarea"
+            aria-label="Meniu de navigare"
           >
             <i class="fas fa-bars"></i>
           </button>
@@ -44,7 +44,7 @@
               <span class="navbar-title">ePace</span>
             </a>
 
-            <!-- Left links -->
+            <!-- Navbar links -->
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link" href="#program">Program</a>
@@ -53,24 +53,24 @@
                 <a class="nav-link" href="#details">Detalii</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Despre noi</a>
+                <a class="nav-link disabled" href="#" aria-disabled="true"
+                  >Despre noi</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link disabled" href="#" aria-disabled="true"
+                  >Contact</a
+                >
               </li>
-            </ul>
-            <!-- Left links -->
 
-            <!-- Right Link -->
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
+              <li class="nav-item ms-xxl-5">
                 <a class="nav-link" href="#form-register">
                   <i class="fa-solid fa-user-plus me-2"></i>
                   <span>Înscriere</span>
                 </a>
               </li>
             </ul>
-            <!-- Right Link -->
+            <!-- Navbar links -->
           </div>
           <!-- Collapsible wrapper -->
         </div>
@@ -91,7 +91,7 @@
             <div
               class="row justify-content-xl-between justify-content-center align-items-center"
             >
-              <!-- Details -->
+              <!-- First Column -->
               <div
                 class="col-xxl-5 col-lg-6 col-md-10 col-details mb-md-5 mb-lg-0"
               >
@@ -117,25 +117,23 @@
                   >Detalii</a
                 >
               </div>
-              <!-- Details -->
+              <!-- First Column -->
 
-              <!-- Form -->
+              <!-- Second Column -->
               <div class="col-xl-5 col-lg-6 col-auto">
-                <!-- Title -->
-                <h3 class="visually-hidden" aria-labelledby="form-register">
-                  Formular de înscriere
-                </h3>
-
                 <!-- Form Wrapper -->
                 <form
                   id="form-register"
                   class="form-register p-5 rounded-6 shadow-5-strong"
                   method="POST"
                   action=""
+                  aria-label="Formular de înscriere"
                 >
                   <!-- Grid Row -->
                   <div class="row mb-4">
+                    <!-- Column -->
                     <div class="col-auto mx-auto">
+                      <!-- Form Header -->
                       <div
                         class="sub-title text-success text-center"
                         aria-live="polite"
@@ -152,14 +150,17 @@
                           >de utilizatori înscriși în program</span
                         >
                       </div>
+                      <!-- Form Header -->
                     </div>
+                    <!-- Column -->
                   </div>
                   <!-- Grid Row -->
 
                   <!-- Grid Row -->
                   <div class="row mb-4">
-                    <!-- First Name -->
+                    <!-- First Column -->
                     <div class="col-sm-6 mb-4 mb-sm-0">
+                      <!-- First Name -->
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
@@ -169,11 +170,13 @@
                         />
                         <label class="form-label" for="first-name">Nume</label>
                       </div>
+                      <!-- First Name -->
                     </div>
-                    <!-- First Name -->
+                    <!-- First Column -->
 
-                    <!-- Last Name -->
+                    <!-- Second Column -->
                     <div class="col-sm-6">
+                      <!-- Last Name -->
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="text"
@@ -185,15 +188,17 @@
                           >Prenume</label
                         >
                       </div>
+                      <!-- Last Name -->
                     </div>
-                    <!-- Last Name -->
+                    <!-- Second Column -->
                   </div>
                   <!-- Grid Row -->
 
                   <!-- Grid Row -->
                   <div class="row mb-4">
-                    <!-- Phone Number -->
+                    <!-- Column -->
                     <div class="col">
+                      <!-- Phone Number -->
                       <div data-mdb-input-init class="form-outline">
                         <input
                           type="tel"
@@ -205,8 +210,9 @@
                           >Număr de telefon</label
                         >
                       </div>
+                      <!-- Phone Number -->
                     </div>
-                    <!-- Phone Number -->
+                    <!-- Column -->
                   </div>
                   <!-- Grid Row -->
 
@@ -222,7 +228,7 @@
                 </form>
                 <!-- Form Wrapper -->
               </div>
-              <!-- Form -->
+              <!-- Second Column -->
             </div>
             <!-- Grid Row -->
           </div>
@@ -232,9 +238,9 @@
       </section>
       <!-- Intro -->
     </header>
-    <!--Main Navigation-->
+    <!-- Header -->
 
-    <!--Main layout-->
+    <!-- Main -->
     <main>
       <!-- Container -->
       <div class="container">
@@ -242,10 +248,10 @@
         <section id="program" class="mb-lg-8 mb-5">
           <!-- Title -->
           <h2 class="title text-center mb-2">Programul ePace pe scurt</h2>
-          <hr class="hr hr-blurry mt-0 mb-5" />
+          <hr class="hr hr-blurry mt-0 mb-5" aria-hidden="true" />
 
           <!-- Grid Row -->
-          <div class="row g-5 px-md-3 px-5">
+          <div class="row g-5 px-3 mb-4 mx-0">
             <!-- First Column -->
             <div class="col-lg-4 col-12 text-md-center text-lg-start">
               <!-- Wrapper -->
@@ -256,7 +262,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-bullseye fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-bullseye fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -293,7 +302,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-landmark fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-landmark fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -327,7 +339,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-dollar-sign fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-dollar-sign fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -360,10 +375,10 @@
         <section id="details" class="mb-lg-8 mb-5">
           <!-- Title -->
           <h2 class="title text-center mb-2">Programul ePace în detaliu</h2>
-          <hr class="hr hr-blurry mt-0 mb-5" />
+          <hr class="hr hr-blurry mt-0 mb-5" aria-hidden="true" />
 
           <!-- Grid Row -->
-          <div class="row justify-content-center g-5 px-md-3 px-5">
+          <div class="row justify-content-center g-5 px-3 mb-4 mx-0">
             <!-- Column 1 -->
             <div class="col-xxl-8 col-xl-9 col-lg-10 col-12">
               <!-- Wrapper -->
@@ -374,7 +389,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-coins fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-coins fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -417,7 +435,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 1 -->
 
@@ -431,7 +449,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-school fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-school fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -468,7 +489,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 2 -->
 
@@ -482,7 +503,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-bolt fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-bolt fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -518,7 +542,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 3 -->
 
@@ -532,7 +556,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-hospital fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-hospital fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -564,7 +591,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 4 -->
 
@@ -578,7 +605,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-tractor fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-tractor fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -613,7 +643,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 5 -->
 
@@ -627,7 +657,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-hand-holding-usd fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-hand-holding-usd fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -660,7 +693,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 6 -->
 
@@ -674,7 +707,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-chart-line fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-chart-line fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -705,7 +741,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 7 -->
 
@@ -719,7 +755,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-hands-helping fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-hands-helping fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -749,7 +788,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 8 -->
 
@@ -763,7 +802,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-heart fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-heart fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -791,7 +833,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 9 -->
 
@@ -805,7 +847,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-handshake fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-handshake fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -833,7 +878,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 10 -->
 
@@ -847,7 +892,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-rocket fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-rocket fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -875,7 +923,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 11 -->
 
@@ -889,7 +937,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-md-0 me-md-4"
                 >
-                  <i class="fa-solid fa-dove fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-dove fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -915,7 +966,7 @@
               <!-- Wrapper -->
 
               <!-- Divide -->
-              <hr class="hr m-0" />
+              <hr class="hr m-0" aria-hidden="true" />
             </div>
             <!-- Column 12 -->
           </div>
@@ -924,13 +975,13 @@
         <!-- Detalii -->
 
         <!-- Concluzie -->
-        <section id="program" class="mb-lg-8 mb-5">
+        <section class="mb-lg-8 mb-5">
           <!-- Title -->
           <h2 class="title text-center mb-2">Concluzie</h2>
-          <hr class="hr hr-blurry mt-0 mb-5" />
+          <hr class="hr hr-blurry mt-0 mb-5" aria-hidden="true" />
 
           <!-- Grid Row -->
-          <div class="row g-5 px-md-3 px-5 mb-4">
+          <div class="row g-5 px-3 mb-4 mx-0">
             <!-- First Column -->
             <div class="col-lg-4 col-12 text-md-center text-lg-start">
               <!-- Wrapper -->
@@ -941,7 +992,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-bullseye fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-bullseye fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -977,7 +1031,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-triangle-exclamation fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-triangle-exclamation fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -1009,7 +1066,10 @@
                 <div
                   class="badge badge-primary p-3 rounded-6 shadow-3 mb-3 mb-xxl-0 me-xxl-4"
                 >
-                  <i class="fa-solid fa-chart-line fa-2x fa-fw"></i>
+                  <i
+                    class="fa-solid fa-chart-line fa-2x fa-fw"
+                    aria-hidden="true"
+                  ></i>
                 </div>
                 <!-- Icon -->
 
@@ -1036,7 +1096,7 @@
           <!-- Grid Row -->
 
           <!-- Divider -->
-          <hr class="hr mt-0 mb-4" />
+          <hr class="hr mt-0 mb-4" aria-hidden="true" />
 
           <!-- Grid Row -->
           <div class="row justify-content-center">
@@ -1059,10 +1119,16 @@
       </div>
       <!-- Container -->
     </main>
-    <!--Main layout-->
+    <!-- Main -->
 
     <!--Footer-->
-    <footer></footer>
+    <footer>
+      <!-- Copyright -->
+      <p class="bg-footer text-center p-3 m-0">
+        &copy; 2025 ePace. Toate drepturile rezervate.
+      </p>
+      <!-- Copyright -->
+    </footer>
     <!--Footer-->
 
     <!-- Font Awesome -->
