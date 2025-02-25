@@ -222,6 +222,10 @@ body {
    @include mask-dark;
 }
 
+.bg-footer {
+   background-color: $primary-light;
+}
+
 // Small devices
 @media (max-width: 767px) and (orientation: portrait) {
    .page-title {
