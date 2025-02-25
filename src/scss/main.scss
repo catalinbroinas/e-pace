@@ -201,6 +201,16 @@ body {
    z-index: -1;
 }
 
+// Sections
+#form-register {
+   scroll-margin-top: 200px;
+}
+
+#program,
+#details {
+   scroll-margin-top: 100px;
+}
+
 // Components
 .form-register {
    @include ice-style(0.9, 1px);
