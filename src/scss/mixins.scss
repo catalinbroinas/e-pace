@@ -24,13 +24,6 @@
     color: $color;
 }
 
-// Components
-@mixin hr-heading($color: black) {
-    border: 0.35rem $color solid;
-    width: 8vw;
-    opacity: 0.8;
-}
-
 // Style
 @mixin mask-dark($opacity: 0.5) {
     background-color: rgba($color: #000000, $alpha: $opacity);
